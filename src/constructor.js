@@ -8,5 +8,13 @@ module.exports = class RedBlackNode extends BinaryNode {
 
     this.isRed = options.hasOwnProperty('isRed') ? options.isRed : true;
   }
+
+  get isBlack() {
+    return !this.isRed;
+  }
+
+  set isBlack(value) {
+    this.isRed = !value;
+  }
 };
 
