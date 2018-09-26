@@ -6,7 +6,7 @@ module.exports = class RedBlackNode extends BinaryNode {
 
     super(options)
 
-    this.isRed = options.hasOwnProperty('isRed') ? options.isRed : true;
+    this.isRed = options.hasOwnProperty('isRed') ? options.isRed : false;
   }
 
   get isBlack() {
